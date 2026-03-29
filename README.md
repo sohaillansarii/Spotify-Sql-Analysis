@@ -4,7 +4,7 @@
 ![Spotify Logo](img.avif)
 ## 🎧 Spotify Dashboard
 
-## 🎧 Spotify Dashboard
+
 
 ### 📊 Dashboard 1
 <p align="center">
