@@ -1,4 +1,4 @@
-# Spotify SQL Project 
+# Spotify Data Analysis (SQL + Power BI)
 
 
 ![Spotify Logo](img.avif)
