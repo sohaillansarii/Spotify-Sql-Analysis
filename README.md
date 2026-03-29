@@ -4,11 +4,17 @@
 ![Spotify Logo](img.avif)
 ## 🎧 Spotify Dashboard
 
-### Dashboard 1
-![Spotify Dashboard 1](Spotify_Dashboard1.png)
+## 🎧 Spotify Dashboard
 
-### Dashboard 2
-![Spotify Dashboard 2](Spotify_Dashboard2.png)
+### 📊 Dashboard 1
+<p align="center">
+  <img src="Spotify_Dashboard_1.png" width="800"/>
+</p>
+
+### 📊 Dashboard 2
+<p align="center">
+  <img src="Spotify_Dashboard_2..png" width="800"/>
+</p>
 
 ## Overview
 This project involves analyzing a Spotify dataset with various attributes about tracks, albums, and artists using **SQL**. It covers an end-to-end process of normalizing a denormalized dataset, performing SQL queries of varying complexity (easy, medium, and advanced), and optimizing query performance. The primary goals of the project are to practice advanced SQL skills and generate valuable insights from the dataset.
