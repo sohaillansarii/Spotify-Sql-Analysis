@@ -20,12 +20,6 @@
 
 This project analyzes a Spotify dataset using SQL and Power BI to uncover insights into track performance, artist trends, and user engagement. The data is first structured and normalized, followed by advanced SQL queries including aggregations, CTEs, and window functions to extract meaningful patterns. These insights are then visualized through interactive Power BI dashboards for better interpretation and decision-making. The analysis focuses on key factors such as streaming trends, audio features, and platform-based performance. Overall, the project demonstrates an end-to-end data analysis workflow, combining SQL for data processing and Power BI for storytelling and visualization.
 
-##  Key Insights
-
-- Tracks with high energy and danceability tend to have higher streams
-- Official videos significantly increase engagement (views + likes)
-- Singles outperform albums in terms of total streams
-- YouTube vs Spotify consumption differs by track type
 
 ```sql
 -- create table
@@ -245,9 +239,11 @@ ORDER BY 2 DESC;
 ---
 ##  Recommendations
 
-- Promote high-energy tracks for better engagement
 - Focus marketing on singles rather than albums
 - Invest more in official video production
+- Allocate greater promotional efforts on Spotify for tracks showing higher streaming performance relative to YouTube.
+- Focus promotion on each artist’s top 3 highest-view tracks to maximize engagement and visibility across streaming platforms
+
 
 Author - SOHAIL ANSARI
 
