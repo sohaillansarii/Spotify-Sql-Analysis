@@ -1,10 +1,10 @@
 # Spotify Data Analysis (SQL + Power BI)
 
+Analyze Spotify track data with SQL and visualize key insights in Power BI dashboards.
 
 ![Spotify Logo](img.avif)
-## 🎧 Spotify Dashboard
 
-
+## 🎧 Dashboards
 
 ### 📊 Dashboard 1
 <p align="center">
@@ -18,7 +18,18 @@
 
 ## Overview
 
-This project analyzes a Spotify dataset using SQL and Power BI to uncover insights into track performance, artist trends, and user engagement. The data is first structured and normalized, followed by advanced SQL queries including aggregations, CTEs, and window functions to extract meaningful patterns. These insights are then visualized through interactive Power BI dashboards for better interpretation and decision-making. The analysis focuses on key factors such as streaming trends, audio features, and platform-based performance. Overall, the project demonstrates an end-to-end data analysis workflow, combining SQL for data processing and Power BI for storytelling and visualization.
+This project demonstrates an end-to-end music analytics workflow:
+
+- Clean and structure Spotify track data in SQL
+- Analyze track and artist performance using aggregations, CTEs, and window functions
+- Build Power BI dashboards for storytelling and decision-making
+- Compare platform-level behavior (Spotify vs YouTube)
+
+## 🛠 Tech Stack
+
+- SQL (PostgreSQL-style queries)
+- Power BI
+- CSV dataset
 
 
 ```sql
@@ -63,11 +74,20 @@ Before diving into SQL, it’s important to understand the dataset thoroughly. T
 
 ## 🗂 Dataset Information
 
+Dataset File: `spotify_dataset.csv`  
+SQL Script: `spotify.sql`  
 Table Name: `spotify`
 
+## ▶️ How to Use
+
+1. Create the `spotify` table using the SQL script.
+2. Import `spotify_dataset.csv` into the table.
+3. Run the analysis queries in `spotify.sql`.
+4. Use the generated outputs to build or validate Power BI dashboard insights.
 
 
-# 📊 SQL Queries & Analysis
+
+## 📊 SQL Queries & Analysis
 
 ---
 
@@ -239,14 +259,15 @@ ORDER BY 2 DESC;
 ---
 ## Business Insights
 
-- Focus marketing on singles rather than albums
-- Invest more in official video production
+- Focus marketing on singles rather than albums.
+- Invest more in official video production.
 - Allocate greater promotional efforts on Spotify for tracks showing higher streaming performance relative to YouTube.
-- Focus promotion on each artist’s top 3 highest-view tracks to maximize engagement and visibility across streaming platforms
+- Promote each artist’s top 3 highest-view tracks to maximize engagement and visibility.
 
 
-Author - SOHAIL ANSARI
+## Author
 
+Sohail Ansari
 
 
 
