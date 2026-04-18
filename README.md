@@ -1,7 +1,16 @@
 # Spotify Data Analysis (SQL + Power BI)
 
 
+An end-to-end data analysis project using SQL for querying and Power BI for visualization on a Spotify tracks dataset.
+
 ![Spotify Logo](img.avif)
+## 📚 Table of Contents
+- [🎧 Spotify Dashboard](#-spotify-dashboard)
+- [📌 Overview](#-overview)
+- [🗂 Dataset Information](#-dataset-information)
+- [📊 SQL Queries & Analysis](#-sql-queries--analysis)
+- [💡 Business Insights](#-business-insights)
+
 ## 🎧 Spotify Dashboard
 
 
@@ -16,7 +25,7 @@
   <img src="Spotify_Dashboard_2..png" width="800"/>
 </p>
 
-## Overview
+## 📌 Overview
 
 This project analyzes a Spotify dataset using SQL and Power BI to uncover insights into track performance, artist trends, and user engagement. The data is first structured and normalized, followed by advanced SQL queries including aggregations, CTEs, and window functions to extract meaningful patterns. These insights are then visualized through interactive Power BI dashboards for better interpretation and decision-making. The analysis focuses on key factors such as streaming trends, audio features, and platform-based performance. Overall, the project demonstrates an end-to-end data analysis workflow, combining SQL for data processing and Power BI for storytelling and visualization.
 
@@ -63,11 +72,13 @@ Before diving into SQL, it’s important to understand the dataset thoroughly. T
 
 ## 🗂 Dataset Information
 
-Table Name: `spotify`
+Table Name: `spotify`  
+Dataset File: `spotify_dataset.csv`  
+SQL Script: `spotify.sql`
 
 
 
-# 📊 SQL Queries & Analysis
+## 📊 SQL Queries & Analysis
 
 ---
 
@@ -96,7 +107,7 @@ ORDER BY 1;
 ```sql
 SELECT SUM(comments) AS total_comments
 FROM spotify
-WHERE licensed = 'true';
+WHERE licensed = TRUE;
 ```
 
 ---
@@ -154,7 +165,7 @@ SELECT track,
        SUM(views) AS total_views,
        SUM(likes) AS total_likes
 FROM spotify
-WHERE official_video = 'true'
+WHERE official_video = TRUE
 GROUP BY 1
 ORDER BY 2 DESC;
 ```
@@ -237,16 +248,16 @@ ORDER BY 2 DESC;
 ```
 
 ---
-## Business Insights
+## 💡 Business Insights
 
-- Focus marketing on singles rather than albums
-- Invest more in official video production
-- Allocate greater promotional efforts on Spotify for tracks showing higher streaming performance relative to YouTube.
-- Focus promotion on each artist’s top 3 highest-view tracks to maximize engagement and visibility across streaming platforms
+- Focus marketing investment on singles where reach and engagement are stronger.
+- Invest more in official video production to improve views and likes.
+- Allocate greater promotional efforts to Spotify for tracks outperforming YouTube streams.
+- Prioritize each artist’s top 3 most-viewed tracks to maximize campaign impact.
 
 
-Author - SOHAIL ANSARI
-
+---
+**Author:** Sohail Ansari
 
 
 
