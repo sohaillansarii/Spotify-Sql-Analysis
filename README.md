@@ -69,7 +69,7 @@ Table Name: `spotify`
 
 ---
 
-## 1 Tracks with More Than 1 Billion Streams
+## 1. Tracks with More Than 1 Billion Streams
 
 ```sql
 SELECT title, stream 
@@ -79,7 +79,7 @@ WHERE stream > 1000000000;
 
 ---
 
-## 2 List All Albums with Their Artists
+## 2. List All Albums with Their Artists
 
 ```sql
 SELECT DISTINCT album, artist
@@ -89,7 +89,7 @@ ORDER BY 1;
 
 ---
 
-## 3 Total Comments for Licensed Tracks
+## 3. Total Comments for Licensed Tracks
 
 ```sql
 SELECT SUM(comments) AS total_comments
@@ -99,7 +99,7 @@ WHERE licensed = 'true';
 
 ---
 
-## 4 Tracks Belonging to Album Type "Single"
+## 4. Tracks Belonging to Album Type "Single"
 
 ```sql
 SELECT *
@@ -109,7 +109,7 @@ WHERE album_type = 'single';
 
 ---
 
-## 5 Total Number of Tracks by Each Artist
+## 5. Total Number of Tracks by Each Artist
 
 ```sql
 SELECT artist,
@@ -120,7 +120,7 @@ GROUP BY 1;
 
 ---
 
-## 6 Average Danceability per Album
+## 6. Average Danceability per Album
 
 ```sql
 SELECT album,
@@ -132,7 +132,7 @@ ORDER BY 2 DESC;
 
 ---
 
-## 7 Top 5 Tracks with Highest Energy
+## 7. Top 5 Tracks with Highest Energy
 
 ```sql
 SELECT track,
@@ -145,7 +145,7 @@ LIMIT 5;
 
 ---
 
-## 8 Tracks with Official Video (Views & Likes)
+## 8. Tracks with Official Video (Views & Likes)
 
 ```sql
 SELECT track,
@@ -159,7 +159,7 @@ ORDER BY 2 DESC;
 
 ---
 
-## 9 Total Views for Each Album
+## 9. Total Views for Each Album
 
 ```sql
 SELECT album,
@@ -171,7 +171,7 @@ ORDER BY 2 DESC;
 
 ---
 
-## 10 Tracks Streamed More on Spotify than YouTube
+## 10. Tracks Streamed More on Spotify than YouTube
 
 ```sql
 SELECT *
@@ -188,7 +188,7 @@ AND streamed_on_youtube <> 0;
 
 ---
 
-## 11 Top 3 Most Viewed Tracks per Artist (Window Function)
+## 11. Top 3 Most Viewed Tracks per Artist (Window Function)
 
 ```sql
 WITH ranking_artist AS (
@@ -206,7 +206,7 @@ WHERE rank <= 3;
 
 ---
 
-## 12 Tracks with Above-Average Liveness
+## 12. Tracks with Above-Average Liveness
 
 ```sql
 SELECT track,
@@ -218,7 +218,7 @@ WHERE liveness > (SELECT AVG(liveness) FROM spotify);
 
 ---
 
-## 13 Energy Difference per Album (CTE)
+## 13. Energy Difference per Album (CTE)
 
 ```sql
 WITH t1 AS (
